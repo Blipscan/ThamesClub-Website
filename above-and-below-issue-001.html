@@ -132,6 +132,23 @@
 	background: var(--navy);
 	padding-top: 100px;
 }
+
+    /* SECTION INDICATOR */
+    .sec-nav{position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:100;display:flex;flex-direction:column;gap:6px;opacity:0;transition:opacity .4s}
+    .sec-nav.visible{opacity:1}
+    .sec-nav a{display:block;width:8px;height:8px;border-radius:50%;background:rgba(166,137,74,.25);transition:background .3s,transform .3s;position:relative}
+    .sec-nav a.active{background:var(--gold);transform:scale(1.3)}
+    .sec-nav a:hover{background:rgba(166,137,74,.6)}
+    .sec-nav .sec-tip{position:absolute;right:20px;top:50%;transform:translateY(-50%);white-space:nowrap;font-family:var(--sans);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);background:rgba(12,28,46,.92);padding:5px 10px;border-radius:3px;pointer-events:none;opacity:0;transition:opacity .2s}
+    .sec-nav a:hover .sec-tip{opacity:1}
+
+    /* BACK TO TOP */
+    .btt{position:fixed;bottom:28px;right:24px;z-index:100;width:40px;height:40px;border-radius:50%;background:rgba(12,28,46,.85);border:1px solid rgba(166,137,74,.3);color:var(--gold);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity .3s,border-color .2s;backdrop-filter:blur(8px);text-decoration:none}
+    .btt.visible{opacity:1}
+    .btt:hover{border-color:var(--gold)}
+    .btt svg{width:16px;height:16px}
+
+    @media(max-width:860px){.sec-nav{display:none}}
   </style>
 </head>
 <body>
@@ -151,7 +168,7 @@
 <!-- ═══════════════════════════════════════════════
      COVER
      ═══════════════════════════════════════════════ -->
-<section class="auto-style2">
+<section class="auto-style2" id="cover">
   <div class="cover-bg" style="background:linear-gradient(180deg,rgba(12,28,46,.6),rgba(12,28,46,.4) 40%,rgba(12,28,46,.9)),url('images/river-dawn.jpg') center/cover">
     <div class="cover-tex"></div>
     <div class="cover-glow"></div>
@@ -172,7 +189,7 @@
 <!-- ═══════════════════════════════════════════════
      FROM THE PRESIDENT
      ═══════════════════════════════════════════════ -->
-<article><div class="wn">
+<article id="president"><div class="wn">
   <div class="a-head">From the Walls</div>
   <div style="margin:24px 0 20px"><img alt="Ramón Masso-Flores" src="images/ramon-tile.jpg" style="width:23%;display:block"></div>
   <div class="a-sub">By Ramón Masso-Flores, Senior Chief Petty Officer (Ret.), U.S. Submarine Service<br>
@@ -297,7 +314,7 @@
 <!-- ═══════════════════════════════════════════════
      ABOVE AND BELOW — opening essay
      ═══════════════════════════════════════════════ -->
-<article><div class="wn">
+<article id="above-below"><div class="wn">
   <div class="lab">Above and Below</div>
   <h2 class="a-head">The Clubs Are Gone. This One Stayed.</h2>
   <div class="a-sub">Opening Essay — Issue One</div>
@@ -340,7 +357,7 @@
 <!-- ═══════════════════════════════════════════════
      THE PROFILE
      ═══════════════════════════════════════════════ -->
-<article><div class="wn">
+<article id="profile"><div class="wn">
   <div class="lab">The Profile</div>
   <h2 class="a-head">Thirty-One Years in Building 260</h2>
   <div class="a-sub">A Composite Portrait — Issue One</div>
@@ -383,7 +400,7 @@
 <!-- ═══════════════════════════════════════════════
      THE TABLE
      ═══════════════════════════════════════════════ -->
-<article class="dark"><div class="wn">
+<article class="dark" id="table"><div class="wn">
   <div class="lab">The Table</div>
   <h2 class="a-head">A Homecoming Dinner</h2>
   <div class="a-sub">A Menu for the First Real Meal Ashore · Serves Eight · New England Winter</div>
@@ -451,7 +468,7 @@
 <!-- ═══════════════════════════════════════════════
      THE RIVER
      ═══════════════════════════════════════════════ -->
-<article><div class="wn">
+<article id="river"><div class="wn">
   <div class="lab">The River</div>
   <h2 class="a-head">Two Banks, One Community</h2>
   <div class="a-sub">The Thames River Corridor</div>
@@ -474,7 +491,7 @@
 <!-- ═══════════════════════════════════════════════
      FROM THE WALLS
      ═══════════════════════════════════════════════ -->
-<article><div class="wn">
+<article id="walls"><div class="wn">
   <div class="lab">From the Walls</div>
   <h2 class="a-head">Before the Boats</h2>
   <div class="a-sub">What the Club's Earliest Records Tell Us</div>
@@ -501,7 +518,7 @@
 <!-- ═══════════════════════════════════════════════
      COMMUNITY NOTEBOOK
      ═══════════════════════════════════════════════ -->
-<article><div class="wn">
+<article id="notebook"><div class="wn">
   <div class="lab">Community Notebook</div>
   <h2 class="a-head">Notes from the River</h2>
   <div class="a-sub">Events, Milestones &amp; Recognitions</div>
@@ -578,4 +595,56 @@
       <a href="index.html#membership">Membership</a>
     </div>
   </div>
-  <div class="foot-copy">© <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-st
+  <div class="foot-copy">© 2026 The Thames Club. All rights reserved.</div>
+</div>
+</footer>
+
+<!-- Section indicator -->
+<nav class="sec-nav" id="sec-nav">
+  <a href="#cover"><span class="sec-tip">Cover</span></a>
+  <a href="#president"><span class="sec-tip">President's Letter</span></a>
+  <a href="#above-below"><span class="sec-tip">Above & Below</span></a>
+  <a href="#profile"><span class="sec-tip">The Profile</span></a>
+  <a href="#table"><span class="sec-tip">The Table</span></a>
+  <a href="#river"><span class="sec-tip">The River</span></a>
+  <a href="#walls"><span class="sec-tip">From the Walls</span></a>
+  <a href="#notebook"><span class="sec-tip">Notebook</span></a>
+</nav>
+
+<!-- Back to top -->
+<a class="btt" href="#cover" id="btt" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</a>
+
+<script>
+(function(){
+  // Section indicator + back to top visibility
+  var sections = ['cover','president','above-below','profile','table','river','walls','notebook'];
+  var dots = document.querySelectorAll('#sec-nav a');
+  var secNav = document.getElementById('sec-nav');
+  var btt = document.getElementById('btt');
+
+  function update(){
+    var scrollY = window.scrollY || window.pageYOffset;
+    var vh = window.innerHeight;
+
+    // Show/hide nav dots and back-to-top after scrolling past cover
+    var pastCover = scrollY > vh * 0.5;
+    secNav.classList.toggle('visible', pastCover);
+    btt.classList.toggle('visible', pastCover);
+
+    // Find active section
+    var active = 0;
+    for(var i = 0; i < sections.length; i++){
+      var el = document.getElementById(sections[i]);
+      if(el && el.getBoundingClientRect().top < vh * 0.4) active = i;
+    }
+    dots.forEach(function(d,j){ d.classList.toggle('active', j === active); });
+  }
+
+  window.addEventListener('scroll', update, {passive:true});
+  update();
+})();
+</script>
+</body>
+</html>
