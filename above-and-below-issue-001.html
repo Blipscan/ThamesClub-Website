@@ -6,7 +6,7 @@
   <title>Above &amp; Below — Issue One: Homecoming | The Thames Club</title>
   <meta name="description" content="Above &amp; Below, Issue One: Homecoming. A quarterly publication of The Thames Club, New London, Connecticut."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
   <style>
     :root{
       --navy:#0c1c2e;--cream:#f4edd8;--cream-d:#e8dfc8;
@@ -15,7 +15,8 @@
       --w92:rgba(244,237,216,.92);--w70:rgba(244,237,216,.70);
       --w55:rgba(244,237,216,.55);--w42:rgba(244,237,216,.42);
       --w35:rgba(244,237,216,.35);
-      --serif:'Cormorant Garamond',Georgia,serif;
+      --serif:'Libre Baskerville',Georgia,serif;
+      --display:'Cormorant Garamond',Georgia,serif;
       --sans:'Inter',system-ui,sans-serif;
       --max:760px;
       --max-w:1080px;
@@ -32,7 +33,7 @@
     /* NAV */
     .site-nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(12,28,46,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(166,137,74,.12)}
     .nav-in{display:flex;align-items:center;justify-content:space-between;padding:16px 28px}
-    .nav-brand{font-family:var(--serif);font-size:15px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--w92);text-decoration:none;line-height:1.25}
+    .nav-brand{font-family:var(--display);font-size:15px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--w92);text-decoration:none;line-height:1.25}
     .nav-brand span{display:block;font-size:9.5px;font-weight:400;letter-spacing:.26em;color:var(--w55);margin-top:1px}
     .nav-r{display:flex;gap:26px;align-items:center}
     .nav-r a{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.10em;text-transform:uppercase;color:var(--w70);text-decoration:none}
@@ -51,7 +52,7 @@
     .cover-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 25% 80%,rgba(166,137,74,.06) 0%,transparent 50%),radial-gradient(ellipse at 75% 20%,rgba(166,137,74,.04) 0%,transparent 50%)}
     .cover-content{position:relative;z-index:2;padding:0 0 80px}
     .cover-pub{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
-    .cover h1{font-size:clamp(42px,5.8vw,72px);font-weight:700;line-height:.96;letter-spacing:.03em;text-transform:uppercase;margin-bottom:12px}
+    .cover h1{font-family:var(--display);font-size:clamp(42px,5.8vw,72px);font-weight:700;line-height:.96;letter-spacing:.03em;text-transform:uppercase;margin-bottom:12px}
     .cover-issue{font-family:var(--sans);font-size:12px;letter-spacing:.20em;text-transform:uppercase;color:var(--w55);margin-bottom:28px}
     .cover-sub{font-size:21px;line-height:1.6;color:var(--w70);max-width:560px}
     .cover-meta{margin-top:48px;font-family:var(--sans);font-size:12px;color:var(--w42);line-height:1.7}
@@ -59,11 +60,11 @@
 
     /* ARTICLE LAYOUT */
     article{padding:72px 0}
-    .a-head{font-family:var(--serif);font-size:clamp(28px,3.2vw,40px);font-weight:700;line-height:1.12;margin:0 0 8px}
+    .a-head{font-family:var(--display);font-size:clamp(28px,3.2vw,40px);font-weight:700;line-height:1.12;margin:0 0 8px}
     .a-sub{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-l);margin:0 0 28px}
     .prose{font-size:18.5px;line-height:1.82;color:var(--ink-m);max-width:var(--max)}
     .prose p+p{margin-top:20px}
-    .prose .drop:first-letter{float:left;font-size:64px;line-height:.8;padding:4px 10px 0 0;font-weight:700;color:var(--ink)}
+    .prose .drop:first-letter{float:left;font-family:var(--display);font-size:64px;line-height:.8;padding:4px 10px 0 0;font-weight:700;color:var(--ink)}
     .prose em{font-style:italic}
     .prose .break{display:block;text-align:center;color:var(--gold);margin:32px 0;font-size:14px;letter-spacing:.5em}
 
@@ -82,7 +83,7 @@
     .menu-course{margin-top:32px;padding-top:28px;border-top:1px solid rgba(166,137,74,.18)}
     .dark .menu-course{border-color:rgba(166,137,74,.25)}
     .menu-cat{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
-    .menu-name{font-family:var(--serif);font-size:22px;font-weight:700;margin-bottom:6px}
+    .menu-name{font-family:var(--display);font-size:22px;font-weight:700;margin-bottom:6px}
     .menu-desc{font-size:16.5px;line-height:1.72;color:var(--ink-m);max-width:600px}
     .dark .menu-desc{color:var(--w70)}
     .menu-wine{margin-top:10px;font-family:var(--sans);font-size:12px;color:var(--ink-l);letter-spacing:.02em}
@@ -95,7 +96,7 @@
 
     /* SILENT RUNNING */
     .silent{background:var(--navy);color:var(--cream);text-align:center;padding:80px 28px}
-    .silent p{font-family:var(--serif);font-size:22px;font-style:italic;line-height:1.6;color:var(--w70);max-width:500px;margin:0 auto}
+    .silent p{font-family:var(--display);font-size:22px;font-style:italic;line-height:1.6;color:var(--w70);max-width:500px;margin:0 auto}
     .silent .mark{display:block;margin-top:28px;font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
 
     /* PHOTO SLOT */
@@ -106,7 +107,7 @@
     /* FOOTER */
     footer{background:var(--navy);color:var(--w70);border-top:1px solid rgba(166,137,74,.25);padding:52px 0 60px}
     .foot-g{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:start}
-    .foot-brand{font-family:var(--serif);font-size:16px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--w92);margin-bottom:16px}
+    .foot-brand{font-family:var(--display);font-size:16px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--w92);margin-bottom:16px}
     .foot-info{font-family:var(--sans);font-size:13px;line-height:1.85}
     .foot-info a{color:var(--gold);text-decoration:none}
     .foot-info a:hover{text-decoration:underline}
@@ -179,7 +180,7 @@
   <h1>From the Walls</h1>
 	<p class="a-head">&nbsp;</p>
 	<p class="a-head">
-	<img alt="RAM�N MASSO-FLORES" height="23%" src="ramon%20tile.jpg" width="23%"></p>
+	<img alt="RAM�N MASSO-FLORES" height="23%" src="ramon%20tile.jpg" width="23%"></p>
   <div class="a-sub">By Ramon Masso-Flores, Senior Chief Petty Officer (Ret.), U.S. Submarine Service<br>
 	  President of the thames club</div>
 
@@ -573,7 +574,7 @@
      ═══════════════════════════════════════════════ -->
 <section style="padding:72px 0;background:var(--cream-d);border-top:1px solid rgba(166,137,74,.15)"><div class="wn" style="text-align:center">
   <div class="lab">The Thames Club</div>
-  <h2 style="font-family:var(--serif);font-size:28px;font-weight:700;margin:0 0 16px">The table is set.</h2>
+  <h2 style="font-family:var(--display);font-size:28px;font-weight:700;margin:0 0 16px">The table is set.</h2>
   <p style="font-size:17px;color:var(--ink-m);line-height:1.7;max-width:480px;margin:0 auto 28px">Membership is by introduction. If you recognize something in these pages, we invite you to visit.</p>
   <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
     <a href="index.html#membership" class="btn btn-d">Arrange a Visit</a>
