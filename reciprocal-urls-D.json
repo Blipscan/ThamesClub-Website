@@ -1,0 +1,110 @@
+{
+  "chunk": "D",
+  "verified_date": "2026-04-27",
+  "clubs": [
+    {
+      "name": "The Hope Club",
+      "city": "Providence, RI",
+      "url": "https://www.hopeclub.com/",
+      "status": "verified",
+      "notes": "",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "Green Boundary Club",
+      "city": "Aiken, SC",
+      "url": "https://www.greenboundaryclub.com/",
+      "status": "verified",
+      "notes": "",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "The City Club of Rock Hill",
+      "city": "Rock Hill, SC",
+      "url": "https://www.cityclubofrockhill.com/",
+      "status": "verified",
+      "notes": "",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "The University Club of Memphis",
+      "city": "Memphis, TN",
+      "url": "https://www.ucmem.com/",
+      "status": "verified",
+      "notes": "",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "The Fort Worth Club",
+      "city": "Fort Worth, TX",
+      "url": "https://www.fortworthclub.com/",
+      "status": "verified",
+      "notes": "Platinum Club of America",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "The Army & Navy Club",
+      "city": "Washington, DC",
+      "url": "https://www.armynavyclub.org/",
+      "status": "verified",
+      "notes": "",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "The Georgetown Club",
+      "city": "Washington, DC",
+      "url": "https://www.georgetownclub.org/",
+      "status": "verified",
+      "notes": "Also styled 'The George Town Club' (same entity)",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "Public Schools Club",
+      "city": "Adelaide, Australia",
+      "url": "https://www.publicschoolsclub.com.au/",
+      "status": "verified",
+      "notes": "",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "The Hamilton Club",
+      "city": "Hamilton, ON, Canada",
+      "url": "https://www.thehamiltonclub.com/",
+      "status": "verified",
+      "notes": "Founded 1873",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "The Brantford Club",
+      "city": "Brantford, ON, Canada",
+      "url": "https://thebrantfordclub.com/",
+      "status": "verified",
+      "notes": "Older brantfordclub.ca also appears but .com is current primary",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "The National Club",
+      "city": "Toronto, ON, Canada",
+      "url": "https://www.thenationalclub.com/",
+      "status": "verified",
+      "notes": "Founded 1874",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "Der Übersee-Club",
+      "city": "Hamburg, Germany",
+      "url": "https://www.ueberseeclub.de/",
+      "status": "verified",
+      "notes": "German-language site",
+      "last_checked": "2026-04-27"
+    },
+    {
+      "name": "Mercantile Athletic Club",
+      "city": "Jakarta, Indonesia",
+      "url": "https://www.mercantileathletic.club/",
+      "status": "verified",
+      "notes": "",
+      "last_checked": "2026-04-27"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "chunk": "C",
+  "verified_date": "2026-04-27",
+  "clubs": [
+    {"name": "University Club of St. Paul", "city": "St. Paul, MN", "url": "https://www.universityclubofstpaul.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "Kitchi Gammi Club", "city": "Duluth, MN", "url": "https://kitchigammiclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Capital Club", "city": "Jackson, MS", "url": "https://www.capitalclubms.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "Carriage Club", "city": "Kansas City, MO", "url": "https://www.thecarriageclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Park Avenue Club", "city": "Florham Park, NJ", "url": "https://www.parkavenueclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Morristown Club", "city": "Morristown, NJ", "url": "https://www.morristownclub.net/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "Downtown Association", "city": "New York, NY", "url": "https://www.thedta.com/", "status": "verified", "notes": "Officially named 'Down Town Association' (two words); thedta.com is the official site.", "last_checked": "2026-04-27"},
+    {"name": "The Fort Schuyler Club", "city": "Utica, NY", "url": "https://www.fortschuylerclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "University Club of Albany", "city": "Albany, NY", "url": "", "status": "defunct", "notes": "Club closed in 2022 after 121 years; building sold and now houses the Albany Black Chamber of Commerce. RECOMMEND REMOVAL FROM ROSTER.", "last_checked": "2026-04-27"},
+    {"name": "The Athletic Club of Columbus", "city": "Columbus, OH", "url": "https://accolumbus.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Union Club", "city": "Cleveland, OH", "url": "https://theunionclub.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The University Club of Cincinnati", "city": "Cincinnati, OH", "url": "https://www.uclubcincinnati.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "Beacon Club", "city": "Oklahoma City, OK", "url": "https://beaconclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Racquet Club of Philadelphia", "city": "Philadelphia, PA", "url": "https://rcop.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"}
+  ]
+}

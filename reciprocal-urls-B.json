@@ -1,0 +1,21 @@
+{
+  "chunk": "B",
+  "verified_date": "2026-04-27",
+  "clubs": [
+    {"name": "University Club of Tampa", "city": "Tampa, FL", "url": "https://www.uclubtampa.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Governors Club", "city": "Tallahassee, FL", "url": "https://www.govclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Pinnacle Club", "city": "Augusta, GA", "url": "https://pinnacleclubaugusta.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Georgian Club", "city": "Atlanta, GA", "url": "https://www.georgianclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "Arid Club", "city": "Boise, ID", "url": "https://aridclub.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "Sangamo Club", "city": "Springfield, IL", "url": "", "status": "defunct", "notes": "Closed June 2023 after 133 years; property still on market as of May 2025. RECOMMEND REMOVAL FROM ROSTER.", "last_checked": "2026-04-27"},
+    {"name": "Michigan Shores Club", "city": "Wilmette, IL", "url": "https://www.michiganshores.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Columbia Club", "city": "Indianapolis, IN", "url": "https://columbia-club.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Outing Club", "city": "Davenport, IA", "url": "https://www.theoutingclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Cumberland Club", "city": "Portland, ME", "url": "https://cumberlandclub.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Harvard Club of Boston", "city": "Boston, MA", "url": "https://www.harvardclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "University Club of Boston", "city": "Boston, MA", "url": "https://www.uclub.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Wamsutta Club", "city": "New Bedford, MA", "url": "https://www.wamsuttaclub.club/", "status": "verified", "notes": "Primary .org domain (wamsuttaclub.org) shows 'under construction'; active site is .club TLD.", "last_checked": "2026-04-27"},
+    {"name": "The Worcester Club", "city": "Worcester, MA", "url": "https://www.worcclub.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "The Beacon Club", "city": "Kalamazoo, MI", "url": "", "status": "defunct", "notes": "Private club closed 2019; location reopened as A La Ferme restaurant (public, not a private club) in October 2023. RECOMMEND REMOVAL FROM ROSTER.", "last_checked": "2026-04-27"}
+  ]
+}
