@@ -3,19 +3,19 @@
   "verified_date": "2026-04-27",
   "clubs": [
     {"name": "The Club", "city": "Birmingham, AL", "url": "https://www.theclubinc.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
-    {"name": "University Club of Phoenix", "city": "Phoenix, AZ", "url": "", "status": "defunct", "notes": "Permanently closed June 30, 2025 due to declining membership after 60 years. Phoenix Country Club extended social memberships to former members. RECOMMEND REMOVAL FROM ROSTER.", "last_checked": "2026-04-27"},
+    {"name": "University Club of Phoenix", "city": "Phoenix, AZ", "url": "", "status": "defunct", "notes": "", "last_checked": "2026-04-27"},
     {"name": "Marines' Memorial Club", "city": "San Francisco, CA", "url": "https://marinesmemorial.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
-    {"name": "The Balboa Bay Club", "city": "Newport Beach, CA", "url": "https://balboabayclub.com/", "status": "verified", "notes": "balboabayresort.com is the affiliated public hotel — not the same.", "last_checked": "2026-04-27"},
+    {"name": "The Balboa Bay Club", "city": "Newport Beach, CA", "url": "https://balboabayclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
     {"name": "University Club of San Francisco", "city": "San Francisco, CA", "url": "https://www.uclubsf.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
     {"name": "The Tower Club", "city": "Oxnard, CA", "url": "https://www.towercluboxnard.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
     {"name": "Santa Barbara Club", "city": "Santa Barbara, CA", "url": "https://www.santabarbaraclub.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
-    {"name": "Essex Yacht Club", "city": "Essex, CT", "url": "https://www.essexyc.org/", "status": "verified", "notes": "Distinct from Essex Corinthian Yacht Club (separate club, same town).", "last_checked": "2026-04-27"},
+    {"name": "Essex Yacht Club", "city": "Essex, CT", "url": "https://www.essexyc.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
     {"name": "The Hartford Club", "city": "Hartford, CT", "url": "https://hartfordclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
-    {"name": "The Elm City Club", "city": "New Haven, CT", "url": "https://www.elmcityclub.com/", "status": "verified", "notes": "Legacy graduateclub.com still resolves to same site. Located at 155 Elm St., former Graduate Club building.", "last_checked": "2026-04-27"},
+    {"name": "The Elm City Club", "city": "New Haven, CT", "url": "https://www.elmcityclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
     {"name": "Stonington Harbor Yacht Club", "city": "Stonington, CT", "url": "https://shyc.us/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
     {"name": "The Mory's Association", "city": "New Haven, CT", "url": "https://www.morys1849.org/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
-    {"name": "The Quinnipiac Club", "city": "New Haven, CT", "url": "", "status": "defunct", "notes": "Merged with Graduate Club in 2012 to form The Elm City Club. Historic Church Street building sold to Biohaven for $4.1M; club no longer operates. RECOMMEND REMOVAL — already covered by Elm City Club entry.", "last_checked": "2026-04-27"},
-    {"name": "Epping Forest Yacht Club", "city": "Jacksonville, FL", "url": "https://www.efyc.com/", "status": "verified", "notes": "Full name on site: 'Epping Forest Yacht & Country Club'.", "last_checked": "2026-04-27"},
+    {"name": "The Quinnipiac Club", "city": "New Haven, CT", "url": "", "status": "defunct", "notes": "", "last_checked": "2026-04-27"},
+    {"name": "Epping Forest Yacht Club", "city": "Jacksonville, FL", "url": "https://www.efyc.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"},
     {"name": "The River Club", "city": "Jacksonville, FL", "url": "https://www.jaxriverclub.com/", "status": "verified", "notes": "", "last_checked": "2026-04-27"}
   ]
 }
