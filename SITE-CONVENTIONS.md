@@ -24,12 +24,10 @@ This document is the canonical reference. If a page disagrees with this file, th
 
 | Use this                | Never use                              |
 |-------------------------|-----------------------------------------|
-| Above & Below           | Above & Beyond, Above and Below*        |
+| Above & Below           | Above & Beyond, Above and Below         |
 | Est. 1869               | Estd. 1869, Founded 1869 (in short form)|
 | New London, CT          | NL, New-London                          |
 | 290 State Street        | 290 State St., #290 State              |
-
-*The filename `above-and-beyond-issue-2.html` predates this rule and is on the rename list.*
 
 ### Contact (canonical)
 
@@ -74,12 +72,11 @@ Defined in `:root` on every page. All values literal hex unless noted.
 |-------|-----------------|----------------|
 | `.sc` | `#f4edd8` cream | `--ink` body text |
 | `.scd`| `#ede4cf` cream-deep | `--ink` body text |
-| `.sn` | `#0c1c2e` navy / `#f0e8d0` parchment-light* | cream text or ink |
+| `.scl`| `#f0e8d0` cream-light (parchment) | `--ink` body text |
+| `.sn` | `#0c1c2e` navy | cream text |
 | `.sm` | `#0e1c2c` mid | cream text |
 | `.sd` | `#07101a` deep | cream text |
 | `.sw` | `#0a1520` / `#0b0906` (varies by page) | cream text |
-
-*`.sn` is overloaded — `dining.html` uses light parchment, `index.html` uses navy. New pages should follow the `index.html` convention. Audit and unify.*
 
 ---
 
@@ -211,27 +208,27 @@ The footer link list is intentionally shorter than the nav — it omits dropdown
 
 ### Aspect ratio
 
-**4:3 is the site default for content photos.** Use the `.dining-img` pattern (or its successor — see TODO):
+**4:3 is the site default for content photos.** Use the `.photo-4-3` pattern:
 
 ```html
-<div class="dining-img"><img src="images/section_NN.jpg" alt="…"></div>
+<div class="photo-4-3"><img src="images/section_NN.jpg" alt="…"></div>
 ```
 
 ```css
-.dining-img{width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:8px;display:block;position:relative;background:#0c1c2e}
-.dining-img img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform 6s ease;filter:contrast(1.07) saturate(1.04);image-rendering:-webkit-optimize-contrast}
-.dining-img:hover img{transform:scale(1.02)}
+.photo-4-3{width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:8px;display:block;position:relative;background:#0c1c2e}
+.photo-4-3 img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform 6s ease;filter:contrast(1.07) saturate(1.04);image-rendering:-webkit-optimize-contrast}
+.photo-4-3:hover img{transform:scale(1.02)}
 ```
 
 Image pairs (side-by-side) use 3:2 instead and lose the border-radius:
 
 ```css
-.image-pair .dining-img{aspect-ratio:3/2;border-radius:0}
+.image-pair .photo-4-3{aspect-ratio:3/2;border-radius:0}
 ```
 
 ### Sharpen filter
 
-Every photo gets `filter:contrast(1.07) saturate(1.04)` plus `image-rendering:-webkit-optimize-contrast`. This is built into `.dining-img img` — do not apply per-image. The values are deliberately conservative:
+Every photo gets `filter:contrast(1.07) saturate(1.04)` plus `image-rendering:-webkit-optimize-contrast`. This is built into `.photo-4-3 img` — do not apply per-image. The values are deliberately conservative:
 
 - `contrast(1.04) saturate(1.02)` — too subtle to perceive
 - `contrast(1.07) saturate(1.04)` — **current; right for most photos**
@@ -310,9 +307,7 @@ When adding a new pattern, document it here in the same format.
 
 ### Issue archive (publications)
 
-`above-and-below-issue-001.html` · `above-and-beyond-issue-2.html`* · `issue1.html` · `above-below-replaced2.html` · `reciprocal-clubs-print.html`
-
-*Filename pre-dates the "never Above & Beyond" rule. Rename when convenient: `above-and-below-issue-2.html`. Update internal links.*
+`above-and-below-issue-001.html` · `above-and-below-issue-2.html` · `issue1.html` · `above-below-replaced2.html` · `reciprocal-clubs-print.html`
 
 ---
 
@@ -360,8 +355,6 @@ Override via `AUTH_USER` / `AUTH_PASS` env vars on Render. Do not commit differe
 
 ## 13. Known TODOs
 
-- Rename `above-and-beyond-issue-2.html` → `above-and-below-issue-2.html`; update inbound links
-- Reconcile `.sn` overload (parchment-light vs. navy) — pick one
 - Audit pages for `--cream-dim` used as body text on cream backgrounds (readability rule violations)
 - Decide whether to retire `above-below-replaced2.html` and `issue1.html` (legacy)
-- Generalize `.dining-img` — rename to `.photo-4-3` since it's used site-wide, not just dining
+- Internal title/header inside `above-and-below-issue-2.html` may still read "Above & Beyond" — audit and update if so
