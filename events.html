@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Events "” The Thames Club</title>
+  <meta name="description" content="Events at The Thames Club in New London, Connecticut." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#07101a;
+      --blue:#0c1c2e;
+      --cream:#f4edd8;
+      --paper:#ede4cf;
+      --ink:#1a1208;
+      --gold:#a6894a;
+      --gold2:#c9a96e;
+      --muted:rgba(244,237,216,.72);
+      --max:1120px;
+      --display:'Cormorant Garamond', Georgia, serif;
+      --serif:'Libre Baskerville', Georgia, serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--serif);background:var(--navy);color:var(--cream);line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+
+    nav{position:sticky;top:0;z-index:10;background:rgba(7,16,26,.96);border-bottom:1px solid rgba(166,137,74,.22)}
+    .nav-inner{max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:16px;color:var(--cream);line-height:1.15}
+    .brand small{display:block;font-family:var(--serif);font-weight:400;font-size:9px;color:var(--gold2);letter-spacing:.22em;margin-top:3px}
+    .links{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    .links a{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:rgba(244,237,216,.78)}
+    .links a:hover{color:var(--cream)}
+    .visit{border:1px solid rgba(166,137,74,.5);padding:7px 15px;border-radius:20px;color:var(--cream)!important}
+
+    .hero{min-height:68vh;display:flex;align-items:end;padding:110px 0 70px;position:relative;overflow:hidden;background:
+      radial-gradient(circle at 20% 85%, rgba(166,137,74,.16), transparent 33%),
+      linear-gradient(180deg,#07101a,#0c1c2e)}
+    .hero:before{content:"";position:absolute;inset:0;opacity:.05;background-image:linear-gradient(rgba(201,169,110,.6) 1px, transparent 1px),linear-gradient(90deg,rgba(201,169,110,.6) 1px, transparent 1px);background-size:80px 80px}
+    .hero .wrap{position:relative;z-index:1}
+    .eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.28em;color:var(--gold2);margin-bottom:18px}
+    h1{font-family:var(--display);font-size:clamp(58px,9vw,108px);line-height:.88;text-transform:uppercase;letter-spacing:.02em;margin-bottom:24px}
+    .sub{font-family:var(--display);font-size:clamp(18px,2vw,24px);font-style:italic;color:var(--muted);max-width:640px}
+    .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:44px;padding-top:24px;border-top:1px solid rgba(166,137,74,.25);font-size:12px;color:rgba(244,237,216,.72)}
+    .facts strong{display:block;font-size:9px;color:var(--gold2);text-transform:uppercase;letter-spacing:.18em;margin-bottom:5px}
+
+    main{background:var(--paper);color:var(--ink);padding:76px 0}
+    .section-label{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.3em;color:#8a6835;font-weight:700;margin-bottom:14px}
+    h2{font-family:var(--display);font-size:clamp(38px,5vw,64px);line-height:.95;margin-bottom:14px}
+    .intro{font-size:16px;color:rgba(26,18,8,.68);max-width:640px;margin-bottom:46px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .card{background:#07101a;border:1px solid rgba(166,137,74,.22);color:var(--cream);overflow:hidden;min-height:100%}
+    .card img{display:block;width:100%;height:190px;object-fit:cover;background:#101820}
+    .card-body{padding:20px}
+    .date{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.18em;color:var(--gold2);font-weight:700;margin-bottom:8px}
+    .card h3{font-family:var(--display);font-size:22px;line-height:1.08;margin-bottom:8px}
+    .card p{font-size:13px;color:rgba(244,237,216,.72)}
+    .empty,.error{grid-column:1/-1;background:rgba(7,16,26,.06);border:1px solid rgba(138,104,53,.25);padding:26px;color:rgba(26,18,8,.65)}
+
+    .regular{margin-top:64px;padding-top:44px;border-top:1px solid rgba(138,104,53,.24)}
+    .entertainment{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
+    .ent{background:#0c1c2e;color:var(--cream);border:1px solid rgba(166,137,74,.22);padding:22px}
+    .ent h3{font-family:var(--display);font-size:22px;margin-bottom:6px}
+    .ent p{font-size:13px;color:rgba(244,237,216,.74)}
+
+    footer{background:#07101a;border-top:1px solid rgba(166,137,74,.18);padding:46px 0;color:rgba(244,237,216,.65);font-size:12px}
+    footer .foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+    footer strong{display:block;font-family:var(--display);font-size:20px;color:var(--cream);letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+
+    @media(max-width:950px){.grid{grid-template-columns:repeat(2,1fr)}.facts{grid-template-columns:repeat(2,1fr)}.entertainment{grid-template-columns:1fr}.links{display:none}}
+    @media(max-width:560px){.grid{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.hero{min-height:60vh}.wrap{padding:0 20px}}
+  body::after{
+  content:'';
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  height:40vh; /* show only bottom 40% */
+  pointer-events:none;
+  z-index:9999;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.008;
+}
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html">The Thames Club<small>New London Â· Est. 1869</small></a>
+      <div class="links">
+        <a href="dining.html">Dining</a>
+        <a href="events.html">Events</a>
+        <a href="above-below.html">Above &amp; Below</a>
+        <a href="history.html">History</a>
+        <a href="membership.html">Membership</a>
+        <a href="reciprocal-clubs.html">Reciprocal Clubs</a>
+        <a class="visit" href="visit.html">Visit</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Founded February 8, 1869 "” New London, Connecticut</div>
+      <h1>Events</h1>
+      <p class="sub">Calendar, entertainment, and the reasons members return throughout the year.</p>
+      <div class="facts">
+        <div><strong>Address</strong>290 State Street<br>New London, CT 06320</div>
+        <div><strong>Lunch</strong>Wednesday BYO<br>12"“2 PM</div>
+        <div><strong>Dinner</strong>Thursdays<br>5 PM</div>
+        <div><strong>Contact</strong><a href="tel:9592642733">959-264-2733</a><br><a href="mailto:thamesclub.nl@gmail.com">thamesclub.nl@gmail.com</a></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap">
+      <span class="section-label">Calendar &amp; Entertainment</span>
+      <h2>What's coming</h2>
+      <p class="intro">Members receive the full calendar. These are the events that make the Club worth belonging to.</p>
+
+      <div id="events-container" class="grid">
+        <div class="empty">Loading events"¦</div>
+      </div>
+
+      <div class="regular">
+        <span class="section-label">Regular Entertainment</span>
+        <div class="entertainment">
+          <div class="ent"><h3>Jazz Nights</h3><p>Live music, cocktails, and an easy reason to gather after work.</p></div>
+          <div class="ent"><h3>Club Dinners</h3><p>Seasonal dinners and member evenings in the rooms that define the Club.</p></div>
+          <div class="ent"><h3>Private Events</h3><p>Member-hosted events, celebrations, and gatherings throughout the year.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div><strong>The Thames Club</strong>Connecticut's oldest private social club.</div>
+      <div>290 State Street Â· New London, CT 06320<br>959-264-2733</div>
+    </div>
+  </footer>
+
+  <script>
+    const fallbackEvents = [
+      { title:'Pub Night', date:'Thursday Â· April 30 Â· 6:00 PM', description:'Members and guests welcome. $10 cover.', image:'images/events_06.jpg' },
+      { title:'Jazz Night', date:'Friday Â· May 10 Â· 7:00 PM', description:'Live jazz trio. Bar opens at 5:30.', image:'images/events_07.jpg' },
+      { title:'Flamenco Night', date:'Saturday Â· May 18', description:'Tapas, sangria, and live performance at the Club.', image:'images/events_04.jpg' },
+      { title:'Summer Kickoff', date:'June 1', description:'Season opening event with drinks, dinner, and good company.', image:'images/events_02.png' }
+    ];
+
+    function renderEvents(events){
+      const container = document.getElementById('events-container');
+      if(!container) return;
+      if(!events || !events.length){
+        container.innerHTML = '<div class="empty">No upcoming public events are listed yet.</div>';
+        return;
+      }
+      container.innerHTML = events.map(ev => `
+        <article class="card">
+          
+          <div class="card-body">
+            <span class="date">${ev.date || ''}</span>
+            <h3>${ev.title || 'Club Event'}</h3>
+            
+          </div>
+        </article>
+      `).join('');
+    }
+
+    async function loadEvents(){
+      try{
+        const res = await fetch('events.json', { cache:'no-store' });
+        if(!res.ok) throw new Error('events.json not found');
+        const events = await res.json();
+        renderEvents(events);
+      }catch(err){
+        renderEvents(fallbackEvents);
+      }
+    }
+
+    loadEvents();
+  </script>
+</body>
+</html>
+
+
+
+
