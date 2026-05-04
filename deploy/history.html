@@ -440,8 +440,14 @@ document.querySelectorAll('.r').forEach(el=>ro.observe(el));
 <script>
 (function(){var h=document.getElementById('hamburger'),m=document.getElementById('nav-mobile');if(h&&m){h.addEventListener('click',function(){h.classList.toggle('open');m.classList.toggle('open')});}document.querySelectorAll('.nav-dd').forEach(function(dd){var trigger=dd.querySelector('.nav-dd-trigger'),menu=dd.querySelector('.nav-dd-menu');if(!trigger||!menu)return;trigger.addEventListener('click',function(e){e.stopPropagation();var isOpen=menu.style.display==='block';document.querySelectorAll('.nav-dd-menu').forEach(function(m){m.style.display='none';});menu.style.display=isOpen?'none':'block';});});document.addEventListener('click',function(){document.querySelectorAll('.nav-dd-menu').forEach(function(m){m.style.display='none';});});})();
 </script>
+<section class="membership-inquiry">
+  <h2>Membership Inquiries</h2>
+  <p>Membership at The Thames Club is by introduction. Categories, privileges, and details are discussed personally.</p>
+  <p><strong>To inquire:</strong> call (959) 264-2733 or email thamesclub.nl@gmail.com.</p>
+</section>
 </body>
 </html>
+
 
 
 
